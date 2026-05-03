@@ -1,23 +1,8 @@
-# 🚀 Backend Learning
+# Backend Learning
 
 A personal repository to document my backend development journey, focusing on Python and FastAPI.
 
-## 📁 Structure
-
-```
-backend-learning/
-│
-├── fastapi/
-│   ├── lecture-01/
-│   │   └── main.py     # Endpoints, Pydantic, HTTP Errors
-│   ├── lecture-02/
-│   │   └── main.py
-│   └── ...
-│
-└── README.md
-```
-
-## 🛠️ How to run
+## How to run
 
 **1. Install dependencies:**
 ```bash
@@ -38,13 +23,13 @@ python -m uvicorn main:app --reload
 - API: http://localhost:8000
 - Documentation: http://localhost:8000/docs
 
-## 📚 Progress
+## Progress
 
 ### FastAPI
 | Lecture | Topics | Status |
 |---------|--------|--------|
-| lecture-01 | Endpoints, Pydantic, HTTP Errors | ✅ |
-| lecture-02 | Database | 🔜 |
+| lecture-01 | Endpoints, Pydantic, HTTP Errors |
+| lecture-02 | Database | ... |
 
 ## 🔧 Stack
 
