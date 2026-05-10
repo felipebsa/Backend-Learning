@@ -11,7 +11,7 @@ class ProductSchema(BaseModel):
     value: float
     detail: str
     expired: bool = False
-
+ 
 @app.post("/products/")
 def create_product(product: ProductSchema):
     db = SessionLocal()
