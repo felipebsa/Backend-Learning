@@ -30,7 +30,8 @@ python -m uvicorn main:app --reload
 |---------|--------|
 | lecture-01 | Endpoints, Pydantic, HTTP Errors |
 | lecture-02 | SQLAlchemy, SQLite |
-| lecture-03 | ... |
+| lecture-03 | SQLAlchemy + FastAPI - Exercises |
+| lecture-04 | ... |
 
 ## Stack
 
