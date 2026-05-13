@@ -33,8 +33,9 @@ def get_task(id: int):
     return task
 
 @app.get("/tasks")
-def get_tasks_end():
+def get_tasks(done: bool = None):
     db = session_base()
-    tasks = db.query(Task).all()
-    return tasks
+    if done is None:
+        return db.query(Task).all()
+    return db.query(Task).filter_by(done=done).all()
     
