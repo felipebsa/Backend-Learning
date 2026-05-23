@@ -5,19 +5,19 @@ A personal repository to document my backend development journey, focusing on Py
 ## How to run
 
 **1. Install dependencies:**
-\```bash
+```bash
 pip install fastapi uvicorn sqlalchemy
-\```
+```
 
 **2. Navigate to the lecture folder:**
-\```bash
+```bash
 cd fastapi/lecture-01
-\```
+```
 
 **3. Start the server:**
-\```bash
+```bash
 python -m uvicorn main:app --reload
-\```
+```
 
 **4. Open in browser:**
 - API: http://localhost:8000
@@ -30,8 +30,9 @@ python -m uvicorn main:app --reload
 |---------|--------|
 | lecture-01 | Endpoints, Pydantic, HTTP Errors |
 | lecture-02 | SQLAlchemy, SQLite |
-| lecture-03 | SQLAlchemy + FastAPI - Exercises |
-| lecture-04 | ... |
+| lecture-03 | SQLAlchemy + FastAPI - Full CRUD, project structure (models, schemas, routes) |
+| lecture-04 | Frontend integration, CORS, HTML/CSS/JS |
+| lecture-05 | ... |
 
 ## Stack
 
