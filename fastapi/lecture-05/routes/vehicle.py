@@ -3,13 +3,13 @@ from database import Session_Local
 from models.vehicle import vehicle
 from schemas.vehicle import VehicleSchema
 
-app = APIRouter()
+router = APIRouter()
 
-@app.get("/")
+@router.get("/")
 def home():
     return {"message": "successful home"}
     
-@app.get("/vehicles/{id}")
+@router.get("/vehicles/{id}")
 def get_vehicle(id: int):
     db = Session_Local()
     db_vehicle = db.query(vehicle).filter_by(id=id).first()
@@ -18,14 +18,14 @@ def get_vehicle(id: int):
     db.close()
     return {"message": db_vehicle}
 
-@app.get("/vehicles")
+@router.get("/vehicles")
 def get_vehicles():
     db = Session_Local()
     db_vehicle = db.query(vehicle).all()
     db.close()
     return {"message": db_vehicle}
 
-@app.post("/register_vehicle")
+@router.post("/register_vehicle")
 def create_vehicle(Vehicle: VehicleSchema):
     db = Session_Local()
     db_vehicle = vehicle(
@@ -40,7 +40,7 @@ def create_vehicle(Vehicle: VehicleSchema):
     db.close()
     return {"message": "successful create_vehicle"}
 
-@app.delete("/vehicle_delete/{id}")
+@router.delete("/vehicle_delete/{id}")
 def delete_vehicle(id: int):
     db = Session_Local()
     db_vehicle = db.query(vehicle).filter_by(id=id).first()
@@ -51,7 +51,7 @@ def delete_vehicle(id: int):
     db.close()
     return {"message": "successful delete_vehicle"}
 
-@app.put("/vehicle_update/{id}")
+@router.put("/vehicle_update/{id}")
 def update_vehicle(id: int, Vehicle: VehicleSchema):
     db = Session_Local()
     db_vehicle = db.query(vehicle).filter_by(id=id).first()
