@@ -20,7 +20,7 @@ def get_product_id(id: int, db: Session = Depends(get_db)):
     return {"message": db_product}
 
 @router.get("/products/search_active/{active}")
-def get_products_id(active: bool, db: Session = Depends(get_db)):
+def get_products_active(active: bool, db: Session = Depends(get_db)):
     query = select(Product).where(Product.active == active)
     db_products = db.execute(query).scalars().all()
     if not db_products:
