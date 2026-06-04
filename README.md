@@ -33,6 +33,7 @@ python -m uvicorn main:app --reload
 | lecture-03 | SQLAlchemy + FastAPI - Full CRUD, project structure (models, schemas, routes) |
 | lecture-04 | Frontend integration, CORS, HTML/CSS/JS |
 | lecture-05 | SQLAlchemy 2.0 - Mapped, mapped_column, DeclarativeBase, Full CRUD |
+| lecture-06 | SQLAlchemy 2.0 - Modern queries with select, execute, scalars + Depends injection |
 
 ## Stack
 
