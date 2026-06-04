@@ -11,7 +11,7 @@ pip install fastapi uvicorn sqlalchemy
 
 **2. Navigate to the lecture folder:**
 ```bash
-cd fastapi/lecture-01
+cd lecture-06
 ```
 
 **3. Start the server:**
