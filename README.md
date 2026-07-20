@@ -6,10 +6,10 @@ A personal repository to document my backend development journey, focusing on Py
 
 **1. Install dependencies:**
 ```bash
-pip install fastapi uvicorn sqlalchemy
+pip install -r requirements.txt
 ```
 
-**2. Navigate to the lecture folder:**
+**2. Navigate to the folder you want to run:**
 ```bash
 cd lecture-06
 ```
@@ -35,6 +35,12 @@ python -m uvicorn main:app --reload
 | lecture-05 | SQLAlchemy 2.0 - Mapped, mapped_column, DeclarativeBase, Full CRUD |
 | lecture-06 | SQLAlchemy 2.0 - Modern queries with select, execute, scalars + Depends injection |
 
+### Tools
+| Folder | Topics |
+|--------|--------|
+| tools/alembic-train | Alembic - migrations (revision, autogenerate, upgrade/downgrade), env.py configuration, versioning schema without losing data |
+| tools/pytest-train | Pytest - fixtures, TestClient, dependency overrides, isolated test database, response_model with `from_attributes` |
+
 ## Stack
 
 - [Python](https://python.org)
@@ -42,3 +48,5 @@ python -m uvicorn main:app --reload
 - [Pydantic](https://docs.pydantic.dev)
 - [Uvicorn](https://www.uvicorn.org)
 - [SQLAlchemy](https://sqlalchemy.org)
+- [Alembic](https://alembic.sqlalchemy.org)
+- [Pytest](https://docs.pytest.org)
