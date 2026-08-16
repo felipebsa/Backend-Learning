@@ -38,8 +38,8 @@ python -m uvicorn main:app --reload
 ### Tools
 | Folder | Topics |
 |--------|--------|
-| tools/alembic-train | Alembic - migrations (revision, autogenerate, upgrade/downgrade), env.py configuration, versioning schema without losing data |
-| tools/pytest-train | Pytest - fixtures, TestClient, dependency overrides, isolated test database, response_model with `from_attributes` |
+| tools/alembic | Alembic - migrations (revision, autogenerate, upgrade/downgrade), env.py configuration, versioning schema without losing data |
+| tools/pytest | Pytest - fixtures, TestClient, dependency overrides, isolated test database, response_model with `from_attributes` |
 
 ## Stack
 
